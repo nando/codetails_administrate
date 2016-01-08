@@ -442,7 +442,7 @@ section "generate \e[1mfield custom_type\e[0m" do
   El customizado:
   
   <%= f.label field.attribute %>
-  <%= \e[1mf.select :office,
+  <%= \e[1mf.select field.attribute,
                I18n.t('offices').invert\e[0m %>
   EOS
 end
